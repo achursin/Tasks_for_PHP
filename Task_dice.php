@@ -4,11 +4,11 @@ error_reporting(-1);
 $FirstCastPlayer = mt_rand(1,6);
 $SecondCastPlayer = mt_rand(1,6);
 $SumCastPlayer = $FirstCastPlayer + $SecondCastPlayer;
-echo nl2br("У игрока выпало: " . $SumCastPlayer .PHP_EOL);
+echo "У игрока выпало: " . $SumCastPlayer .PHP_EOL;
 $FirstCastComputer = mt_rand(1,6);
 $SecondCastComputer = mt_rand(1,6);
 $SumCastComputer = $FirstCastComputer + $SecondCastComputer;
-echo nl2br("У компьютера выпало: " . $SumCastComputer .PHP_EOL);
+echo "У компьютера выпало: " . $SumCastComputer .PHP_EOL;
 // Проверяем кто победит
 if ($SumCastPlayer == $SumCastComputer) {
 	echo "У компьютера и игрока выпало одинковое количество, ничья";
